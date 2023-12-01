@@ -64,7 +64,7 @@ namespace FigureLibraryUnitTests
 
         [Theory]
         [InlineData(3, 4, 5, 5, 2)]
-        public void TriangleSize_ShouldEquals_WhenValuesSuitable(int sideA, int sideB, int sideC,int expectedWidth, int expectedHeight)
+        public void TriangleSize_ShouldEqualsData_WhenValuesSuitable(int sideA, int sideB, int sideC,int expectedWidth, int expectedHeight)
         {
             var _figure = new Triangle(sideA, sideB, sideC);
             Assert.Equal(expected: expectedWidth, _figure.Size.Width);
